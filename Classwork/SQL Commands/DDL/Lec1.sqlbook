@@ -1,0 +1,34 @@
+-- SQLBook: Markup
+### Creating Databases
+
+``` SQL
+create database <database_name>
+
+-- SQLBook: Code
+
+--^ Banking Dataset
+--* Tables
+--Customer
+--Account
+--Products
+--Employees
+--TransactionDetails
+--Branch
+-- SQLBook: Code
+
+create table Customer
+(
+    id int primary key,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    account_no int,
+    dob DATE,
+    cust_address VARCHAR(50),
+    cellno NUMERIC
+)
+-- SQLBook: Markup
+### Select all columns from the table
+``` SQL
+SELECT * FROM Customer
+
+-- SQLBook: Code
