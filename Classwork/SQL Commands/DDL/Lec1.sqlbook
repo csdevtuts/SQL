@@ -1,9 +1,3 @@
--- SQLBook: Markup
-### Creating Databases
-
-``` SQL
-create database <database_name>
-
 -- SQLBook: Code
 
 --^ Banking Dataset
@@ -14,6 +8,12 @@ create database <database_name>
 --Employees
 --TransactionDetails
 --Branch
+-- SQLBook: Markup
+### Creating Databases
+
+``` SQL
+create database DB_Name
+
 -- SQLBook: Code
 
 create table Customer
@@ -32,3 +32,8 @@ create table Customer
 SELECT * FROM Customer
 
 -- SQLBook: Code
+SELECT * FROM Customer -- Shows blank data is not inserted
+-- SQLBook: Code
+ALTER TABLE Customer  RENAME COLUMN id to cust_id
+ALTER TABLE Customer  RENAME COLUMN first_name to cust_fName
+ALTER TABLE Customer  RENAME COLUMN last_name to cust_lName
